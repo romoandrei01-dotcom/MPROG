@@ -1,0 +1,48 @@
+
+export const laundryOrders = [
+  {
+    id: "1",
+    customer: "Maria Santos",
+    service: "Wash and Fold",
+    weight: "5 kg",
+    status: "Pending",
+    price: 250,
+    description: "Regular washing and folding of everyday clothes.",
+  },
+  {
+    id: "2",
+    customer: "John Reyes",
+    service: "Wash and Dry",
+    weight: "7 kg",
+    status: "Ongoing",
+    price: 350,
+    description: "Machine washing and drying of laundry items.",
+  },
+  {
+    id: "3",
+    customer: "Anna Cruz",
+    service: "Dry Cleaning",
+    weight: "3 kg",
+    status: "Ready",
+    price: 450,
+    description: "Professional cleaning of delicate clothing.",
+  },
+  {
+    id: "4",
+    customer: "Mark Dela Cruz",
+    service: "Wash and Fold",
+    weight: "4 kg",
+    status: "Completed",
+    price: 200,
+    description: "Laundry service completed and collected.",
+  },
+  {
+    id: "5",
+    customer: "Sofia Garcia",
+    service: "Express Laundry",
+    weight: "6 kg",
+    status: "Pending",
+    price: 420,
+    description: "Priority laundry service for faster processing.",
+  },
+];
