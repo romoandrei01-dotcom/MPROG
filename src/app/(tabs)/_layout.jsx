@@ -1,6 +1,7 @@
 
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Redirect, Tabs, useFocusEffect } from "expo-router";
+import { ShoppingBasket } from "lucide-react-native";
 import { useCallback, useState } from "react";
 import { ActivityIndicator, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -32,6 +33,7 @@ export default function TabsLayout() {
       async function checkLogin() {
         try {
           const session = await AsyncStorage.getItem("isLoggedIn");
+
           if (active) {
             setAuthenticated(session === "true");
           }
@@ -116,6 +118,16 @@ export default function TabsLayout() {
           title: "Inventory",
           tabBarIcon: ({ color }) => (
             <TabIcon label="I" color={color} />
+          ),
+        }}
+      />
+
+      <Tabs.Screen
+        name="orders"
+        options={{
+          title: "Orders",
+          tabBarIcon: ({ color }) => (
+            <ShoppingBasket size={24} color={color} />
           ),
         }}
       />
